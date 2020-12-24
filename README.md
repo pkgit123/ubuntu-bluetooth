@@ -1,2 +1,14 @@
 # ubuntu-bluetooth
 Playbook to manage Ubuntu laptop, including bluetooth pairing
+
+### Pair Dell XPS Ubuntu with Microsoft Surface Ergonomic Keyboard
+* Tried to use the standard bluetooth GUI -> didn't work
+* Trued to use CLI for `bluetoothctl` -> didn't work
+* Ubuntu forum discussion about this issue.  https://ubuntuforums.org/showthread.php?t=2450326
+* Install bluez.  https://core.docs.ubuntu.com/en/stacks/bluetooth/bluez/docs/install-bluez
+    ```
+    $ snap install bluez
+    $ sudo apt install bluez
+    $ snap connections bluez
+    ```
+* Commands for `bluetoothctl`.  https://askubuntu.com/questions/701978/how-can-a-bluetooth-keyboard-that-requires-a-code-entry-be-paired-in-the-termina
