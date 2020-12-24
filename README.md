@@ -12,3 +12,16 @@ Playbook to manage Ubuntu laptop, including bluetooth pairing
     $ snap connections bluez
     ```
 * Commands for `bluetoothctl`.  https://askubuntu.com/questions/701978/how-can-a-bluetooth-keyboard-that-requires-a-code-entry-be-paired-in-the-termina
+    ```
+    $ bluetoothctl
+    [bluetooth]# power on
+    [bluetooth]# agent on
+    [bluetooth]# default-agent 
+    [bluetooth]# scan on
+    [bluetooth]# trust [keyboard MAC Address]
+    [bluetooth]# pair [keyboard MAC Address]
+    Request PIN code
+    [agent] Enter PIN code: 12345
+    [Someone's Keyboard]# 12345
+    [CHG] Device [keyboard MAC Address] Paired: yes
+    ```
