@@ -25,3 +25,7 @@ Playbook to manage Ubuntu laptop, including bluetooth pairing
     [Someone's Keyboard]# 12345
     [CHG] Device [keyboard MAC Address] Paired: yes
     ```
+* Another command for `bluetoothctl`.  https://unix.stackexchange.com/questions/258074/error-when-trying-to-connect-to-bluetooth-speaker-org-bluez-error-failed
+    ```
+    [bluetooth]# info [keyboard MAC Address]
+    ```
